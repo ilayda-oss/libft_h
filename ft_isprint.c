@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:09:26 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/08 14:13:26 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:11:24 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,5 @@ int ft_isprint(int c)
 	}
 	return 0;
 }
+// yazdırılabilir aralıkta mı
+// 32 space ile 126 tilda? ~

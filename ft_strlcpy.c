@@ -1,27 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 19:55:11 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 17:04:34 by suozkara         ###   ########.fr       */
+/*   Created: 2024/10/17 16:20:47 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/17 18:31:43 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
-#include "libft.h"
- void	ft_bzero(void *s, size_t n) // bellek blogunu sıfırlamak amacıyla
- {
-	unsigned char *ptr = (unsigned char*)s;
-	
-	while (n > 0)
+
+#include <libft.h>
+size_t ft_strlcpy(char *dest, char *src, unsigned int size)
+{
+	unsigned int	i;
+	unsigned int	x;
+
+	x = ft_strlen(src);
+	i = 0;
+	if (size != 0)
 	{
-		*ptr = 0; // adresin değerini 0ladı
-		ptr++; // adresi bir sonraki bellek adresine tasındı bir bayt
-		n--;
+		while (src [i] != '\0' && i < size - 1)
+		{
+			dest[i] = src[i];
+			i++;
+		}
+		dest[i] = '\0';
 	}
-	
- }
- // n sıfırlanacak byte sayısı
+	return (x);
+}

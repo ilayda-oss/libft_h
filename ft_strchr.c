@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:29:46 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/08 16:24:17 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:26:21 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,3 +30,19 @@
 	return NULL;
 	
  }
+ // karakter dizileri üstünde c nin ilk gectiigi yerin adresini döndürür verir.
+ #include <stdio.h>
+#include <string.h>
+
+int main() {
+    char *str = "Hello, World! 123";
+    char *result = ft_strchr(str, 'W');
+
+   for (int x = 0; x< 3; x++)
+   {
+		printf("%s\n",str);
+		str += 1;
+   }
+
+    return 0;
+}

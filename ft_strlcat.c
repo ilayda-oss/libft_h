@@ -1,27 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/15 19:55:11 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 17:04:34 by suozkara         ###   ########.fr       */
+/*   Created: 2024/10/17 18:09:59 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/17 18:18:56 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
- void	ft_bzero(void *s, size_t n) // bellek blogunu sıfırlamak amacıyla
- {
-	unsigned char *ptr = (unsigned char*)s;
-	
-	while (n > 0)
-	{
-		*ptr = 0; // adresin değerini 0ladı
-		ptr++; // adresi bir sonraki bellek adresine tasındı bir bayt
-		n--;
-	}
-	
- }
- // n sıfırlanacak byte sayısı
+size_t ft_strlcat(char *  dst, const char *  src, size_t dstsize) // strlcat src yi dst sonuna ekler
+{
+	size_t src_len = ft_strlen(src);
+}
+// dstsize len of dst
+// src den en fazla dstsize - strlen(dst)-1 kadar ekler

@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:03:37 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/08 14:17:12 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:09:23 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,7 @@ if ((c >= 48 && c<= 57) || (c>=65 && c<= 90)  || (c>=97 && c <=122))
 }
 return 0;
 }
+// 48&57 aralıgı 0-9 
+//65&90 aralığı A-Z
+//97&122 aralığı a-z
+// bu fonksiyon isalpha ve ildigit birlesimidir

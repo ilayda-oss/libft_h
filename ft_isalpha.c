@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 13:17:06 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/08 13:41:00 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 17:10:05 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,4 @@ int ft_isalpha(int c)
 	return 0;
 	
 }
+// karakter bir harf mi
