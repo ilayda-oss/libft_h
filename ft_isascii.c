@@ -6,16 +6,14 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:07:32 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 17:10:38 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:01:47 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int  ft_isascii(int c)
 {
-	if(c <= 127 && c>= 0  )
-	{
+	if(c <= 127 && c>= 0 )
 		return 1;
-	}
 	return 0;
 }
 // kararkter ascii table aralıgında mı

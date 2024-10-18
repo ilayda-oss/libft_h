@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:19:59 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 18:07:52 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:04:07 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,3 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     return 0;
 }
 
-int main()
-{
-    char str1[20] = "ilaydalalaal";
-    char str2[50] = "inazorlar cok evrenli";
-    printf("%d\n", memcmp(str1, str2, 1));
-    printf("%d", ft_memcmp(str1, str2,1));
-}

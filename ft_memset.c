@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:13:34 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 18:33:01 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:06:41 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,3 @@ void * ft_memset(void *b, int c, size_t len)
 	return b;
 }
 // len kadar c yi b nin içine set eder.
-int main()
-{
-	printf("%s",memset("ilayda ben slm", '2', 3));
-
-	printf("%s",ft_memset("ilayda ben slm", '2', 3));
-}

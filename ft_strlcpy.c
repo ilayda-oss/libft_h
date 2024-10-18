@@ -6,13 +6,13 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:20:47 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 18:31:43 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:44:03 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 
-#include <libft.h>
+#include "libft.h"
 size_t ft_strlcpy(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;

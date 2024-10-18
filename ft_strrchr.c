@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 16:21:38 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/16 17:41:56 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:43:47 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ char *ft_strrchr(const char *s, int c){
 			}
 			s++;
 		}
-		if ( chr = '\0'){
+		if ( chr == '\0'){
 			return (char *)s;
 		}
 		return (char *)pointer;

@@ -6,17 +6,16 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 14:03:37 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 17:09:23 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 19:02:23 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int ft_isalnum(int c){
 
-if ((c >= 48 && c<= 57) || (c>=65 && c<= 90)  || (c>=97 && c <=122))
-{
+if (ft_isdigit(c) || ft_isalpha(c))
 	return 1;
-}
 return 0;
 }
 // 48&57 aralıgı 0-9 

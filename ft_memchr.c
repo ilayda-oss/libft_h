@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:32:40 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 18:05:36 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/17 18:46:18 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,3 @@ void * ft_memchr(const void *s, int c, size_t n)
 	return NULL;
 }
 // girilen c ile ilk karsılasılan adresi verir
-int main()
-{
-	printf("%s",ft_memchr("ilay2da,", '2', 6));	
-	printf("%p",ft_memchr("ilay2da,", '2', 6));	
-	printf("%s",ft_memchr("ilay2da,", 'd', 6));	
-	printf("%p",ft_memchr("ilay2da,", 'd', 6));	
-
-
-
-}
