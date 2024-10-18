@@ -1,37 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/18 13:36:20 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/18 20:18:55 by suozkara         ###   ########.fr       */
+/*   Created: 2024/10/18 20:38:28 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/18 20:49:10 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-char *ft_substr(char const *s, unsigned int start, size_t len)
+char *ft_strtrim(char const *s1, char const *set)
 {
-	size_t i;
+    char *temp;
+    size_t i;
 
-	i = 0;
-	if (!s)
-		return NULL;
-	if (start > ft_strlen(s))
-		return (ft_strdup(""));
-	if (start + len >= ft_strlen(s))
-		len = ft_strlen(s) - start;
-	char  * new = (char *)malloc(len + 1);
-	if(new == NULL)
-			return NULL; 
-   while (i < len && s[start + i] )
-   {
-		new[i] = s[start + i];
-		i++;
-   }
-   new[i] = '\0';
-   return new;
+    temp = (char *)s1;
+    while (ft_strchr(set, *temp))
+       temp++;
+    i = ft_strlen(temp);
+    while (ft_strchr(set, temp[i - 1]))
+        i--;
+    return (ft_substr(temp, 0, i));
 }
+
+int main()
+{
+    char *s = "-1furkan-1";
+    printf("%s\n",ft_strtrim(s,"-1"));
+}
+
