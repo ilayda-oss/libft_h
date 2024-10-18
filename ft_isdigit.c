@@ -1,25 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 14:14:02 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 19:08:21 by suozkara         ###   ########.fr       */
+/*   Created: 2024/10/08 13:47:42 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/17 19:01:28 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-size_t ft_strlen(const char *s)
-{	
-	size_t length;
-	
-	length = 0;
-	while(s[length]){
-		length ++ ;
-	}
-	return length;
-	
+int ft_isdigit(int c)
+{
+	if(c >= 48 && c <= 57)
+		return 1;
+	return 0;
 }
+// rakam mı

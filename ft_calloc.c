@@ -3,14 +3,24 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
+/*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 23:31:35 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/10/16 23:55:32 by sudeilaydao      ###   ########.fr       */
+/*   Created: 2024/10/17 16:31:38 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/18 12:47:53 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "libft.h"
-void *ft_calloc(size_t count, size_t size) // dinamik bellek tahsisi otomatik belleği 0lar
-{
-}
+void *ft_calloc(size_t count, size_t size)
+	{
+		size_t tot = count * size;
+		void * ptr = malloc(tot); // voidde malloc önündeki variable berlitirlmiyor
+		if(ptr == NULL) // adress blogu ayrıldı mı kontorlü
+			return NULL;
+		ft_bzero(ptr, tot); // void pointer olan ve ayrılmıs olan adres blogunu 0 ile doldurduk..
+		return ptr;
+	}
+	// count: tahsis edilmek istenen eleman sayısı
+	// size: her elemanın boyutu bayt cinsinden
+	// mallocta bu kısım direkt count*size olarak kullanılırdı.

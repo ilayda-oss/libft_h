@@ -1,25 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/08 14:14:02 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 19:08:21 by suozkara         ###   ########.fr       */
+/*   Created: 2024/10/16 16:32:40 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/17 18:46:18 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlen(const char *s)
-{	
-	size_t length;
+void * ft_memchr(const void *s, int c, size_t n)
+{
+	unsigned char *ptr = (unsigned char*)s;
 	
-	length = 0;
-	while(s[length]){
-		length ++ ;
+	while (n > 0)
+	{
+		if(*ptr == (unsigned char)c)
+		{
+			return ptr;
+		}
+		ptr++;
+		n--;
 	}
-	return length;
-	
+	return NULL;
 }
+// girilen c ile ilk karsılasılan adresi verir

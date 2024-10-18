@@ -3,22 +3,30 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
+/*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/16 23:18:41 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/10/16 23:23:38 by sudeilaydao      ###   ########.fr       */
+/*   Created: 2024/10/10 15:12:34 by suozkara          #+#    #+#             */
+/*   Updated: 2024/10/16 19:25:27 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-void *
-ft_memmove(void *dst, const void *src, size_t len) // kaynak ve hedef cakısma ihtimali varsa
+void *ft_memmove(void *dst, const void *src, size_t len)
 {
-    unsigned char *d = (unsigned char *)dst;
-    unsigned char *s = (unsigned char *)src;
+	unsigned char *d = (unsigned char *)dst;
+	const unsigned char *s = (const unsigned char *)src;
 
-    while (len > 0)
-    {
-        len--;
-    }
+	if (len == 0 || dst == src)
+		return (d);
+	if(d > s)
+	{
+		while (len > 0)
+		{
+			d[len - 1] = s[len - 1];
+			len--;
+		}
+	}
+	else
+		ft_memcpy(dst, src, len);
+	return (dst);
 }
