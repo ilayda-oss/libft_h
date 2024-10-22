@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:38:28 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/22 19:07:07 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/22 19:10:00 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,4 @@ char *ft_strtrim(char const *s1, char const *set)
 		i--;
 	return (ft_substr(temp, 0, i));
 }
+
