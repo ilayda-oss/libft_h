@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sudeilaydaozkara <sudeilaydaozkara@stud    +#+  +:+       +#+        */
+/*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:38:28 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/19 12:28:29 by sudeilaydao      ###   ########.fr       */
+/*   Updated: 2024/10/22 19:07:07 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char *ft_strtrim(char const *s1, char const *set)
 {
@@ -25,10 +24,4 @@ char *ft_strtrim(char const *s1, char const *set)
 	while (ft_strchr(set, temp[i - 1]))
 		i--;
 	return (ft_substr(temp, 0, i));
-}
-
-int main()
-{
-	char *s = "-1furkan-1";
-	printf("%s\n", ft_strtrim(s, "-1"));
 }

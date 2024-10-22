@@ -6,13 +6,13 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 12:31:59 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/10/19 14:49:49 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/22 17:19:50 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int intlen(int n, int *sign)
+static int intlen(int n, int *sign)
 {
     int i;
 
