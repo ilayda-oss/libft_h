@@ -6,14 +6,13 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:13:34 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 19:06:41 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/23 19:35:48 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 
 
 #include "libft.h"
-#include  <string.h> 
 void * ft_memset(void *b, int c, size_t len)
 {
 	unsigned char *ptr = (unsigned char *)b; // bunu olma sebebi *b void olarak acılmıs ama c unsigned char oldugu icin aynı tipte olmamlıalr

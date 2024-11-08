@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:31:38 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/18 12:47:53 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/25 14:54:23 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,10 @@
 void *ft_calloc(size_t count, size_t size)
 	{
 		size_t tot = count * size;
-		void * ptr = malloc(tot); // voidde malloc önündeki variable berlitirlmiyor
-		if(ptr == NULL) // adress blogu ayrıldı mı kontorlü
+		void * ptr = malloc(tot); 
+		if(ptr == NULL) 
 			return NULL;
-		ft_bzero(ptr, tot); // void pointer olan ve ayrılmıs olan adres blogunu 0 ile doldurduk..
+		ft_bzero(ptr, tot); 
 		return ptr;
 	}
-	// count: tahsis edilmek istenen eleman sayısı
-	// size: her elemanın boyutu bayt cinsinden
-	// mallocta bu kısım direkt count*size olarak kullanılırdı.
+

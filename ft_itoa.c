@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 12:31:59 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/10/22 17:19:50 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/10/24 18:09:49 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ char *ft_itoa(int n)
     int len;
 
     len = intlen(n, &sign);    
-    if (n == -2147483648)  // Bu özel durumu direkt elle işliyoruz
+    if (n == -2147483648)  
         return ft_strdup("-2147483648");
     ret = malloc(sizeof(char) * (len + 1));
     if (ret == NULL)

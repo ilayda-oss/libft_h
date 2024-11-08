@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:19:59 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/17 19:04:07 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/08 15:38:56 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,4 +28,3 @@ int ft_memcmp(const void *s1, const void *s2, size_t n)
     }
     return 0;
 }
-
