@@ -10,15 +10,17 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-void *ft_calloc(size_t count, size_t size)
-	{
-		size_t tot = count * size;
-		void * ptr = malloc(tot); 
-		if(ptr == NULL) 
-			return NULL;
-		ft_bzero(ptr, tot); 
-		return ptr;
-	}
 
+void	*ft_calloc(size_t count, size_t size)
+{
+	size_t	tot;
+	void	*ptr;
+
+	tot = count * size;
+	*ptr = malloc(tot);
+	if (ptr == NULL)
+		return (NULL);
+	ft_bzero(ptr, tot);
+	return (ptr);
+}
