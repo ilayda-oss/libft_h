@@ -10,20 +10,20 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-
-
 #include "libft.h"
-void * ft_memset(void *b, int c, size_t len)
+
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char *ptr = (unsigned char *)b; // bunu olma sebebi *b void olarak acılmıs ama c unsigned char oldugu icin aynı tipte olmamlıalr
-	unsigned char ch = (unsigned char)c;
-	  // unsigned chara döndürülmesi gerekiyor mande böyle yazıyor
-	while (len>0)
+	unsigned char	*ptr;
+	unsigned char	ch;
+
+	ptr = (unsigned char *)b;
+	ch = (unsigned char)c;
+	while (len > 0)
 	{
-		*ptr =ch;
+		*ptr = ch;
 		ptr++;
 		len--;
 	}
-	return b;
+	return (b);
 }
-// len kadar c yi b nin içine set eder.

@@ -9,13 +9,13 @@
 /*   Updated: 2024/10/22 17:05:39 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include "libft.h"
-size_t ft_strlcat(char *  dst, const char *  src, size_t dstsize) // strlcat src yi dst sonuna ekler
+
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-	size_t dst_len;
-	size_t i;
-	size_t src_len;
+	size_t	dst_len;
+	size_t	i;
+	size_t	src_len;
 
 	i = 0;
 	dst_len = ft_strlen(dst);

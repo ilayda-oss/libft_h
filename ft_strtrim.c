@@ -12,10 +12,10 @@
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *temp;
-	size_t i;
+	char	*temp;
+	size_t	i;
 
 	temp = (char *)s1;
 	while (*temp && ft_strchr(set, *temp))
@@ -25,4 +25,3 @@ char *ft_strtrim(char const *s1, char const *set)
 		i--;
 	return (ft_substr(temp, 0, i));
 }
-

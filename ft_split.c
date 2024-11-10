@@ -12,33 +12,24 @@
 
 #include "libft.h"
 
-// furkan uyar
-
-// char *s = "xxxxfurkanxxuyarxx";
-
-// char **ret = ft_split(s, 'x');
-
-// ret[0] = "furkan";
-// ret[1] = "uyar";
-
-static void word_count(const char *s, char c, size_t *size, size_t *j)
+static void	word_count(const char *s, char c, size_t *size, size_t *j)
 {
-    size_t i;
+	size_t	i;
 
-    i=0;
-    *size = 0;
+	i = 0;
+	*size = 0;
 	*j = 0;
-    while (s[i])
-    {
+	while (s[i])
+	{
 		if (i == 0 && s[i] != c)
 			*size += 1;
-        if (s[i] == c && s[i + 1] && s[i + 1] != c)
+		if (s[i] == c && s[i + 1] && s[i + 1] != c)
 			*size += 1;
 		i++;
-    }
+	}
 }
 
-static void il_free(char **str, size_t i)
+static void	il_free(char **str, size_t i)
 {
 	while (i >= 0 && str[i])
 	{
@@ -48,13 +39,13 @@ static void il_free(char **str, size_t i)
 	free(str);
 }
 
-char **ft_split(char const *s, char c)
+char	**ft_split(char const *s, char c)
 {
-	char **ret;
-	size_t i;
-	size_t j;
-	size_t size;
-	char *temp;
+	char	**ret;
+	size_t	i;
+	size_t	j;
+	size_t	size;
+	char	*temp;
 
 	word_count(s, c, &size, &i);
 	ret = malloc(sizeof(char *) * (size + 1));
