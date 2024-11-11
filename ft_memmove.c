@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/10 15:12:34 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/16 19:25:27 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:43:31 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*d;
+	unsigned char		*d;
 	const unsigned char	*s;
 
 	d = (unsigned char *)dst;

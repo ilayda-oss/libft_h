@@ -12,7 +12,7 @@ OBJS = $(SRCS:.c=.o)
 BONUS_SRC = ft_lstnew.c  ft_lstadd_front.c 
 BONUS_OBJS = $(BONUS_SRC:.c=.o)
 
-CC	=	gcc
+CC	=	cc
 RM	=	rm -f
 FLAGS	= -Wall -Wextra -Werror
 

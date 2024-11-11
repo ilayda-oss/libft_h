@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/15 19:55:11 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/25 15:50:55 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:22:22 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_bzero(void *s, size_t n)
 {
 	unsigned char	*ptr;
 
-	*ptr = (unsigned char *)s;
+	ptr = (unsigned char *)s;
 	while (n > 0)
 	{
 		*ptr = 0;

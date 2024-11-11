@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 12:31:59 by sudeilaydao       #+#    #+#             */
-/*   Updated: 2024/10/24 18:09:49 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:18:50 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 static int	intlen(int n, int *sign)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	*sign = 1;
@@ -57,7 +57,7 @@ char	*ft_itoa(int n)
 		ret[0] = '-';
 	}
 	while (len > 0 && ((sign == 1 && n >= 0)
-        || (sign == -1 && n != 0)))
+			|| (sign == -1 && n != 0)))
 	{
 		ret[--len] = (n % 10) + '0';
 		n = n / 10;

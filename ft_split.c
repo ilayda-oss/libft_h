@@ -6,26 +6,26 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/22 17:15:11 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/23 19:46:30 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:29:51 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static void	word_count(const char *s, char c, size_t *size, size_t *j)
+static void	word_count(const char *s, char c, size_t *size, size_t *i)
 {
-	size_t	i;
+	size_t	j;
 
-	i = 0;
+	j = 0;
 	*size = 0;
-	*j = 0;
-	while (s[i])
+	*i = 0;
+	while (s[j])
 	{
-		if (i == 0 && s[i] != c)
+		if (j == 0 && s[j] != c)
 			*size += 1;
-		if (s[i] == c && s[i + 1] && s[i + 1] != c)
+		if (s[j] == c && s[j + 1] && s[j + 1] != c)
 			*size += 1;
-		i++;
+		j++;
 	}
 }
 

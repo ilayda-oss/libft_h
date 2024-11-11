@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/19 14:52:02 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/19 16:46:26 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 18:40:36 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char	*ret;
+	char			*ret;
 	unsigned int	i;
 
 	i = 0;

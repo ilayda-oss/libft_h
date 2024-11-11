@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 17:07:23 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/18 13:27:07 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:18:19 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	unsigned char	*d;
+	unsigned char		*d;
 	const unsigned char	*s;
 
 	d = (unsigned char *)dst;

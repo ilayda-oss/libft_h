@@ -6,7 +6,7 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 16:31:38 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/25 14:54:23 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 14:22:35 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 
 	tot = count * size;
-	*ptr = malloc(tot);
+	ptr = malloc(tot);
 	if (ptr == NULL)
 		return (NULL);
 	ft_bzero(ptr, tot);

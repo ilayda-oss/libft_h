@@ -6,9 +6,10 @@
 /*   By: suozkara <suozkara@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 20:24:30 by suozkara          #+#    #+#             */
-/*   Updated: 2024/10/18 20:37:30 by suozkara         ###   ########.fr       */
+/*   Updated: 2024/11/11 17:47:25 by suozkara         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
