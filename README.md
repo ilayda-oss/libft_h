@@ -60,11 +60,11 @@ make re
 
 ## Repository Structure
 project-root/
-├── Makefile
-├── libft.h
-├── ft_*.c
-├── bonus/
-└── test/
+-├── Makefile
+-├── libft.h
+-├── ft_*.c
+-├── bonus/
+-└── test/
 
 
 ## Notes
