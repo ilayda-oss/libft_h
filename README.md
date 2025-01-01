@@ -39,6 +39,7 @@ Optional but encouraged functionality for linked list operations:
 Run the following command to compile the library:
 ```bash
 make
+```
 ## Bonus Features
 
 The bonus section of the project allows you to implement additional functionality for manipulating linked lists. This section is optional but adds valuable skills and functionality to your library.
