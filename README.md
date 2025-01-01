@@ -59,13 +59,15 @@ make re
 - **Bonus Functionality**: Include linked list manipulations to earn extra points.
 
 ## Repository Structure
-project-root/
--├── Makefile
--├── libft.h
--├── ft_*.c
--├── bonus/
--└── test/
 
+```text
+project-root/
+├── Makefile
+├── libft.h
+├── ft_*.c
+├── bonus/
+└── test/
+```
 
 ## Notes
 - Testing your functions is strongly encouraged. Use test cases to validate the correctness of your implementations.
